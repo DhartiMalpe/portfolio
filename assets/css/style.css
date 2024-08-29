@@ -1,0 +1,1234 @@
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #2f2d2d;
+}
+
+a  {
+  color: #0563bb;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #067ded;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+
+
+
+
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #0563bb;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #0678e3;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+
+
+/* #preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #0563bb;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+ */
+
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+
+/* @media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+} */
+
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+@media (max-width: 991px) {
+  #header {
+    width: 300px;
+    background: #fff;
+    border-right: 1px solid #e6e9ec;
+    left: -300px;
+  }
+}
+
+@media (min-width: 991px) {
+  #main {
+    margin-left: 100px;
+  }
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+/**
+* Desktop Navigation 
+*/
+.nav-menu {
+  padding: 0;
+  display: block;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu>ul>li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu a,
+.nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: #45505b;
+  padding: 10px 18px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+  border-radius: 50px;
+  background: #f2f3f5;
+  height: 56px;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.nav-menu a i,
+.nav-menu a:focus i {
+  font-size: 20px;
+}
+
+.nav-menu a span,
+.nav-menu a:focus span {
+  padding: 0 5px 0 7px;
+  color: #45505b;
+}
+
+@media (min-width: 992px) {
+
+  .nav-menu a,
+  .nav-menu a:focus {
+    width: 56px;
+  }
+
+  .nav-menu a span,
+  .nav-menu a:focus span {
+    display: none;
+    color: #fff;
+  }
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover>a {
+  color: #fff;
+  background: #0563bb;
+}
+
+.nav-menu a:hover span,
+.nav-menu .active span,
+.nav-menu .active:focus span,
+.nav-menu li:hover>a span {
+  color: #fff;
+}
+
+.nav-menu a:hover,
+.nav-menu li:hover>a {
+  width: 100%;
+  color: #fff;
+}
+
+.nav-menu a:hover span,
+.nav-menu li:hover>a span {
+  display: block;
+}
+
+
+
+
+/**
+* Desktop Navigation 
+*/
+
+
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 28px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 0;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.mobile-nav-toggle i {
+  color: #45505b;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active #header {
+  left: 0;
+}
+
+.mobile-nav-active .mobile-nav-toggle {
+  color: #fff;
+  background-color: #0563bb;
+}
+/**
+* Mobile Navigation 
+*/
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+/* Base Styles */
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/hero-bg.jpg") top right no-repeat;
+  background-size: cover;
+  position: relative;
+  perspective: 1000px; /* Add perspective for 3D effect */
+}
+
+#hero:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateZ(-1px) scale(1.5); /* Create a background layer effect */
+}
+
+/* Text Animation */
+#hero h1, #hero p {
+  transform: translateZ(50px); /* Add depth to text elements */
+  opacity: 0;
+  animation: fadeInUp 1s forwards; /* Add fade-in and up animation */
+}
+
+#hero h1 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #45505b;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for more depth */
+}
+
+#hero p {
+  color: #45505b;
+  margin: 15px 0 0 0;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero p span {
+  color: #0563bb;
+  letter-spacing: 1px;
+}
+
+/* Social Links Animation */
+#hero .social-links {
+  margin-top: 30px;
+  transform: translateZ(30px); /* Add depth to social links */
+  opacity: 0;
+  animation: fadeInUp 1s 0.5s forwards; /* Add fade-in and up animation with delay */
+}
+
+#hero .social-links a {
+  font-size: 24px;
+  display: inline-block;
+  color: #45505b;
+  line-height: 1;
+  margin-right: 20px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+#hero .social-links a:hover {
+  color: #0563bb;
+  transform: scale(1.1); /* Slightly scale up on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  #hero {
+    text-align: center;
+  }
+
+  #hero h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  #hero p {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #45505b;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #0563bb;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+.about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #728394;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about .content ul strong {
+  margin-right: 10px;
+}
+
+.about .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #0563bb;
+  line-height: 0;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+.about .section-title p {
+  text-align:justify;
+}
+
+
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# service
+--------------------------------------------------------------*/
+/* General Container Style */
+.Service .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center the boxes within the container */
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+/* Individual Service Box Style */
+.Service .hover-box {
+  max-width: 280px;
+  height: 450px; /* Increased height for better display */
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ddd; /* Border for the box */
+}
+
+/* Logo Image Style */
+.Service .hover-box img.logo {
+  width: 80px;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  transition: opacity 0.5s ease; /* Smooth hiding transition */
+}
+
+/* Service Title Style */
+.Service .hover-box h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 120px; /* Adjust space for the logo */
+  color: #333;
+  transition: opacity 0.5s ease, transform 0.3s ease;
+}
+
+/* Service Description Style */
+.Service .hover-box .service-description {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+/* General Paragraph Style */
+.Service .hover-box p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #777;
+  transition: opacity 0.5s ease, transform 0.3s ease;
+}
+
+/* Hover Effect for Service Box */
+.Service .hover-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  border-color: #333; /* Darker border on hover */
+}
+
+/* Hide Title and Description on Hover */
+.Service .hover-box:hover h3,
+.Service .hover-box:hover p,
+.Service .hover-box:hover .service-description {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+/* Hide Logo on Hover */
+.Service .hover-box:hover img.logo {
+  opacity: 0; /* Fade out logo */
+}
+
+/* Hover Content Style */
+.Service .hover-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  color: #1f04ea;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #f9f9f9; /* Match background color for consistency */
+}
+
+/* Display Hover Content on Hover */
+.Service .hover-box:hover .hover-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Hover Content Title Style */
+.Service .hover-content h2 {
+  margin: 20px 0 10px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Skills List Container Style */
+.Service .hover-content .skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between images */
+  justify-content: center;
+}
+
+/* Skill Image Style */
+.Service .hover-content .skills img {
+  width: 60px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 5px; /* Optional: rounded corners for images */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: subtle shadow */
+  transition: opacity 0.5s ease;
+}
+
+/* Blur Effect for Non-Hovered Boxes */
+.Service .box-container:hover .hover-box:not(:hover) {
+  filter: blur(4px);
+  transform: scale(0.96);
+  transition: all 0.3s ease;
+}
+
+
+/*--------------------------------------------------------------
+# service
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Akills
+--------------------------------------------------------------*/
+
+
+/* Container for the section */
+#services-skills {
+  padding: 60px 0;
+ 
+}
+
+/* Title styling */
+.services-skills .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-skills .section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.services-skills .section-title p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Container for service boxes */
+.services-skills .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Individual service box */
+.services-skills .service-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+  text-align: center;
+  width: calc(33.333% - 30px); /* Adjust width for 3 boxes per row */
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.service-box:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+}
+
+/* Service logo */
+.service-box img.service-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Service heading */
+.service-box h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Skills container */
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Skill box styling */
+.skill-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Skill name */
+.services-skills .skill-name {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  flex: 1;
+}
+
+/* Progress bar wrapper */
+.services-skills .progress-bar-wrap {
+  flex: 2;
+  background: #e0e0e0;
+  border-radius: 12px;
+  height: 14px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress bar */
+.services-skills .progress-bar {
+  height: 100%;
+  background: #4caf50;
+  color: #fff;
+  text-align: center;
+  line-height: 14px;
+  border-radius: 12px;
+  transition: width 0.4s ease, background-color 0.3s ease;
+  font-size: 14px;
+}
+
+/* Hover effect on progress bar */
+.services-skills .progress-bar-wrap:hover .progress-bar {
+  background-color: #45a049; /* Darker shade for hover */
+}
+
+/* Specific styling for each service */
+.services-skills .teamcenter .progress-bar {
+  background: #007acc;
+}
+
+.services-skills .web-design .progress-bar {
+  background: #f44336;
+}
+
+.services-skills .web-development .progress-bar {
+  background: #ff9800;
+}
+
+.services-skills .programming .progress-bar {
+  background: #3f51b5;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Akills
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+/* General Resume Section Style */
+.resume {
+  padding: 60px 0;
+  /* background-color: #f8f9fa; */
+  position: relative;
+  overflow: hidden;
+}
+
+.resume .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.resume .section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeInUp 1s forwards 0.3s;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.resume .section-title p {
+  font-size: 18px;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeInUp 1s forwards 0.5s;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Resume Title Style */
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #45505b;
+}
+
+/* Resume Item Style */
+.resume .resume-item {
+  padding: 20px;
+  margin-top: 10px;
+  border-left: 2px solid #0563bb;
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards;
+}
+
+.resume .resume-item:hover {
+  background-color: #e7effa;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  transform: translateY(-50px) scale(1.03); /* Move the box upwards and scale it slightly */
+}
+
+/* Resume Item Title and Content Style */
+.resume .resume-item h4 {
+  line-height: 22px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #0563bb;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #f7f8f9;
+  padding: 6px 15px;
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 4px;
+  color: #333;
+  margin-bottom: 10px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.resume .resume-item p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  font-size: 16px;
+  color: #666;
+  padding-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Remove bottom padding for the last resume item */
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+/* Resume Item Bullet Style */
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: -8px;
+  top: 20px;
+  background: #fff;
+  border: 2px solid #0563bb;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .resume .row {
+    flex-direction: column;
+  }
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+/* Style for portfolio section */.skills-used {
+    margin-top: 20px;
+  }
+  
+  .skills-used h6 {
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+  
+  .skills-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+  }
+  
+  .skill-btn {
+      background-color: #007bff; /* Primary button color */
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 8px 15px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .skill-btn:hover {
+      background-color: #0056b3; /* Darker shade for hover */
+      transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .skill-btn:active {
+      background-color: #004080; /* Even darker shade when pressed */
+  }
+  
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+
+
+
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .info {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #0563bb;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #eef7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #45505b;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #728394;
+}
+
+.contact .info .email,
+.contact .info .phone {
+  margin-top: 40px;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: #0563bb;
+  color: #fff;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email] {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #0563bb;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #0678e3;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #f7f8f9;
+  color: #45505b;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #0563bb;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #0678e3;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+
+#footer .credits {
+  font-size: 13px;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
